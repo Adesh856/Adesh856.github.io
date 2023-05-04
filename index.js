@@ -41,8 +41,8 @@ GitHubCalendar(".calendar", "Adesh856", {
   tooltips: true,
 });
 
-let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
-let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
+let resume1 = document.getElementById("resume-link-1").addEventListener("click", NewTab)
+let resume2 = document.getElementById("resume-link-2").addEventListener("click", NewTab)
 
 function NewTab() {
   window.open(
