@@ -56,7 +56,7 @@ GitHubCalendar(".calendar", "Adesh856", {
   tooltips: true,
 });
 
-const resumeButton1 = document.getElementById("resume-button-1");
+const resumeButton1 = document.getElementById("resume-link-1");
 if (resumeButton1) {
   resumeButton1.onclick = () => {
     window.open(
@@ -65,7 +65,7 @@ if (resumeButton1) {
   };
 }
 
-const resumeButton2 = document.getElementById("resume-button-2");
+const resumeButton2 = document.getElementById("resume-link-2");
 if (resumeButton2) {
   resumeButton2.onclick = () => {
     window.open(
