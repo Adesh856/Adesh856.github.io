@@ -41,17 +41,23 @@ GitHubCalendar(".calendar", "Adesh856", {
   tooltips: true,
 });
 
-document.getElementById("resume-button-1").onclick = () => {
-  window.open(
-    "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
-  );
-};
+const resumeButton1 = document.getElementById("resume-button-1");
+if (resumeButton1) {
+  resumeButton1.onclick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
+    );
+  };
+}
 
-document.getElementById("resume-button-2").onclick = () => {
-  window.open(
-    "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
-  );
-};
+const resumeButton2 = document.getElementById("resume-button-2");
+if (resumeButton2) {
+  resumeButton2.onclick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
+    );
+  };
+}
 
 
 function openNav() {
