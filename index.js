@@ -1,6 +1,6 @@
 let i = 0;
 let txt = "NodeJS Backend Developer";
-let speed = 30;
+let speed = 150;
 
 typeWriter();
 
@@ -41,13 +41,13 @@ GitHubCalendar(".calendar", "Adesh856", {
   tooltips: true,
 });
 
-document.getElementById("resume-button-1").onclick = () => {
+document.getElementById("resume-link-1").onclick = () => {
   window.open(
     "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
   );
 };
 
-document.getElementById("resume-button-2").onclick = () => {
+document.getElementById("resume-link-2").onclick = () => {
   window.open(
     "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
   );

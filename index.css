@@ -71,6 +71,7 @@ align-items: center;
   transition:transform .6s;
 top: 30%;
 left: 50%;
+margin-right: 0px;
 
 }
 
