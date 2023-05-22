@@ -6,17 +6,26 @@ typeWriter();
 
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("user-detail-name").style.color = "white";
-    document.getElementById("demo1").innerHTML += txt.charAt(i);
+    const userDetailName = document.getElementById("user-detail-name");
+    if (userDetailName) {
+      userDetailName.style.color = "white";
+    }
+    const demo1 = document.getElementById("demo1");
+    if (demo1) {
+      demo1.innerHTML += txt.charAt(i);
+    }
     i++;
     setTimeout(typeWriter, speed);
   } else {
-    // reset the index when it reaches the end of the text
     i = 0;
-    // clear the text
-    document.getElementById("demo1").innerHTML = "";
-    // make the recursive call
-    document.getElementById("user-detail-name").style.color = "#71e281";
+    const demo1 = document.getElementById("demo1");
+    if (demo1) {
+      demo1.innerHTML = "";
+    }
+    const userDetailName = document.getElementById("user-detail-name");
+    if (userDetailName) {
+      userDetailName.style.color = "#71e281";
+    }
     setTimeout(typeWriter, speed);
   }
 }
@@ -25,13 +34,19 @@ var myNav = document.getElementById("nav-menu");
 var myNav2 = document.getElementById("main");
 window.onscroll = function () {
   if (document.documentElement.scrollTop >= 15) {
-    myNav.classList.add("nav-colored");
-    myNav2.classList.add("nav-colored");
-    // myNav.classList.remove("nav-transparent");
+    if (myNav) {
+      myNav.classList.add("nav-colored");
+    }
+    if (myNav2) {
+      myNav2.classList.add("nav-colored");
+    }
   } else {
-    // myNav.classList.add("nav-transparent");
-    myNav.classList.remove("nav-colored");
-    myNav2.classList.remove("nav-colored");
+    if (myNav) {
+      myNav.classList.remove("nav-colored");
+    }
+    if (myNav2) {
+      myNav2.classList.remove("nav-colored");
+    }
   }
 };
 
@@ -59,13 +74,24 @@ if (resumeButton2) {
   };
 }
 
-
 function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.display = "none";
+  const mySidebar = document.getElementById("mySidebar");
+  const main = document.getElementById("main");
+  if (mySidebar) {
+    mySidebar.style.width = "250px";
+  }
+  if (main) {
+    main.style.display = "none";
+  }
 }
 
 function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.display = "block";
+  const mySidebar = document.getElementById("mySidebar");
+  const main = document.getElementById("main");
+  if (mySidebar) {
+    mySidebar.style.width = "0";
+  }
+  if (main) {
+    main.style.display = "block";
+  }
 }
