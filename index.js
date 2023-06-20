@@ -56,22 +56,13 @@ GitHubCalendar(".calendar", "Adesh856", {
   tooltips: true,
 });
 
-const resumeButton1 = document.getElementById("resume-button-1");
-if (resumeButton1) {
-  resumeButton1.onclick = () => {
-    window.open(
-      "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
-    );
-  };
-}
+let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
+let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
 
-const resumeButton2 = document.getElementById("resume-button-2");
-if (resumeButton2) {
-  resumeButton2.onclick = () => {
-    window.open(
-      "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
-    );
-  };
+function NewTab() {
+  window.open(
+    "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
+  );
 }
 
 function openNav() {
