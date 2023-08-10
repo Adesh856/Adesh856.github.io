@@ -53,7 +53,7 @@ let resume2 = document.getElementById("resume-button-2").addEventListener("click
 let resume3 = document.getElementById("resume-button-3").addEventListener("click", NewTab)
 function NewTab() {
   window.open(
-    "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
+    "https://drive.google.com/file/d/1ylfMPKwZh9Wnaix1zhw_Yc6GDUmmXP64/view?usp=sharing"
   );
 }
 
