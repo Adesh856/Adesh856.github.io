@@ -1,15 +1,11 @@
 let i = 0;
-let txt = "NodeJS Backend Developer";
+let txt = "Full Stack Web Developer";
 let speed = 150;
 
 typeWriter();
 
 function typeWriter() {
   if (i < txt.length) {
-    const userDetailName = document.getElementById("user-detail-name");
-    if (userDetailName) {
-      userDetailName.style.color = "white";
-    }
     const demo1 = document.getElementById("demo1");
     if (demo1) {
       demo1.innerHTML += txt.charAt(i);
@@ -21,10 +17,6 @@ function typeWriter() {
     const demo1 = document.getElementById("demo1");
     if (demo1) {
       demo1.innerHTML = "";
-    }
-    const userDetailName = document.getElementById("user-detail-name");
-    if (userDetailName) {
-      userDetailName.style.color = "#71e281";
     }
     setTimeout(typeWriter, speed);
   }
@@ -58,7 +50,7 @@ GitHubCalendar(".calendar", "Adesh856", {
 
 let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
 let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
-
+let resume3 = document.getElementById("resume-button-3").addEventListener("click", NewTab)
 function NewTab() {
   window.open(
     "https://drive.google.com/file/d/1bHUhuBBaZXtbrab9mh3z1ZGXCxdL2RZ9/view?usp=sharing"
